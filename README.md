@@ -1,7 +1,11 @@
+Got it. Keeping it strictly about what your tool does is the right move—it keeps the project focused. I've adjusted the process count to "130s" to reflect the script's actual power while keeping the professional layout.
+
+Here is your fully updated, ready-to-paste README.md:
+
 🌌 Pxlar Optimizer
 The all-in-one system refinement engine for high-performance Windows environments.
 
-Pxlar is a modular optimization suite designed to strip away Windows bloat, stabilize frame rates, and minimize network jitter. Built and tested on Windows 11 Insider Build 26200, this engine has successfully reduced background processes from 192 down to 104 while gaming.
+Pxlar is a modular optimization suite designed to strip away Windows bloat, stabilize frame rates, and minimize network jitter. Built and tested on Windows 11 Insider Build 26200, this engine is designed to aggressively strip background tasks, successfully bringing process counts down into the 130s for a significantly leaner gaming experience.
 
 ⚠️ CRITICAL: READ BEFORE RUNNING
 ACCOUNT SECURITY WARNING: This engine disables Windows Hello, PIN Login, and Biometrics to reduce background service latency.
@@ -51,3 +55,12 @@ python -m PyInstaller --noconfirm --onefile --windowed --uac-admin --name "Pxlar
 Restore Points: Every run creates a restore point named Before Pxlar Optimization.
 
 How to Undo: Search "Create a restore point" in Start > Click System Restore > Select the Pxlar snapshot to revert all changes.
+
+🤝 Contributing & Support
+Join the Community: We are seeing rapid growth with 20+ unique cloners this week!
+
+Found a bug? Open an Issue.
+
+Have a tweak? Feel free to submit a Pull Request.
+
+Disclaimer: This tool makes deep system changes. Use at your own risk.
