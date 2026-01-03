@@ -1,53 +1,53 @@
-# 🌌 Pxlar Optimizer
-**The all-in-one system refinement engine for high-performance Windows environments.**
+🌌 Pxlar Optimizer
+The all-in-one system refinement engine for high-performance Windows environments.
 
-Pxlar is a modular optimization suite designed to strip away Windows bloat, stabilize frame rates, and minimize network jitter. Unlike generic "one-click" tweakers, Pxlar follows a logical, structured sequence to ensure your system is cleaned, tuned, and safely backed up before any modifications are made.
+Pxlar is a modular optimization suite designed to strip away Windows bloat, stabilize frame rates, and minimize network jitter. Built and tested on Windows 11 Insider Build 26200, this engine has successfully reduced background processes from 192 down to 104 while gaming.
 
----
+⚠️ CRITICAL: READ BEFORE RUNNING
+ACCOUNT SECURITY WARNING: This engine disables Windows Hello, PIN Login, and Biometrics to reduce background service latency.
 
-## 🚀 The PXLAR Sequence
+YOU MUST KNOW YOUR MICROSOFT/WINDOWS ACCOUNT PASSWORD.
+
+Your PIN will be removed. Upon reboot, Windows will require your full password to log in.
+
+If you do not know your password, do not run this script until you have reset/verified it in Settings > Accounts.
+
+🚀 The PXLAR Sequence
 Pxlar executes optimizations in a specific order to ensure maximum effectiveness:
 
-1. **Step 0: Safety First** – Automatically creates a **System Restore Point** and adjusts system frequency limits to ensure a backup is always available.
-2. **Step 1: Edge Vanisher** – Completely removes Microsoft Edge and its background telemetry tasks.
-3. **Step 2: AI Hardware Analysis** – Intelligently calculates and sets the optimal **Virtual Memory (Paging File)** size based on your physical RAM capacity.
-4. **Step 3: Power Tuning** – Forces high-performance power delivery and optimizes CPU core parking/idle states.
-5. **Step 4: Ping & Network** – Fine-tunes the TCP stack, disables Nagle's Algorithm, and flushes DNS to lower in-game latency.
-6. **Step 5: Interactive Debloater** – Launches a final suite for manual control over Windows Defender, Xbox services, and advanced telemetry.
+Step 0: Safety First – Automatically creates a System Restore Point and adjusts system frequency limits.
 
----
+Step 1: Edge Vanisher – Completely removes Microsoft Edge, its updaters, and background telemetry.
 
-## 🛠️ Installation & Usage
+Step 2: AI Hardware Analysis – Intelligently calculates and sets the optimal Static Paging File size based on your RAM.
 
-### For Users (Recommended)
-1. Download the latest `Pxlar_Optimizer.exe` from the [Releases](https://github.com/YourUsername/Pxlar-Optimizer/releases) tab.
-2. Right-click the file and select **Run as Administrator**.
-3. Follow the GUI progress bar and wait for the Interactive Debloater to launch.
+Step 3: Power Tuning – Forces high-performance power delivery and optimizes CPU core parking.
 
-### For Developers (Build from Source)
-If you want to modify Pxlar, ensure you have Python 3.10+ and the following dependencies:
-```bash
-pip install PyQt6 pyinstaller
-Build the executable using:
+Step 4: Ping & Network – Fine-tunes the TCP stack, disables Nagle's Algorithm, and flushes DNS.
+
+Step 5: Interactive Debloater – Advanced manual control over Windows Defender, Xbox services, and telemetry.
+
+🛠️ Installation & Usage
+For Users (Recommended)
+Download the latest Pxlar_Optimizer.exe from the Releases tab.
+
+Right-click the file and select Run as Administrator.
+
+Click YES on the Windows UAC prompt.
+
+Follow the progress bar and wait for the Interactive Debloater to launch.
+
+Note: If the Edge Vanisher fails to run, ensure no Edge processes are open in the background before starting.
+
+For Developers (Build from Source)
+Ensure you have Python 3.10+ and dependencies: pip install PyQt6 pyinstaller
+
+Build the executable:
 
 Bash
 
 python -m PyInstaller --noconfirm --onefile --windowed --uac-admin --name "Pxlar_Optimizer" --add-data "scripts;scripts" --add-data "utilities;utilities" --add-data "EdgeVanisher.ps1;." main.py
 🛡️ Safety & Reversion
-Your system safety is our priority.
+Restore Points: Every run creates a restore point named Before Pxlar Optimization.
 
-Restore Points: Before every run, Pxlar creates a restore point named Before Pxlar Optimization.
-
-How to Undo: If you encounter issues, search for "Create a restore point" in Windows Start, click System Restore, and select the Pxlar snapshot to revert all registry and service changes.
-
-🤝 Contributing & Bug Reports
-Since this is a community-driven project, we rely on your feedback!
-
-Found a bug? Open an Issue.
-
-Have a new tweak? Feel free to submit a Pull Request.
-
-📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Disclaimer: This tool makes deep system changes. Use at your own risk. While we provide safety backups, the developers are not responsible for any system instability.
+How to Undo: Search "Create a restore point" in Start > Click System Restore > Select the Pxlar snapshot to revert all changes.
