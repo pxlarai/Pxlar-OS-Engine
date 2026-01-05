@@ -1,7 +1,3 @@
-Got it. Keeping it strictly about what your tool does is the right move—it keeps the project focused. I've adjusted the process count to "130s" to reflect the script's actual power while keeping the professional layout.
-
-Here is your fully updated, ready-to-paste README.md:
-
 🌌 Pxlar Optimizer
 The all-in-one system refinement engine for high-performance Windows environments.
 
